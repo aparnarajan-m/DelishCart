@@ -4,7 +4,7 @@
     height: 10%;
     display: flex;
     align-items: center;
-    color: #4CAF50;
+    color: white;
     background-color: #FF5722;
 }
 
@@ -12,10 +12,8 @@
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    /* padding: 10px 20px; */
     display: flex;
     justify-content: space-between;
-    /* background-color: yellow; */
 }
 
 
@@ -32,21 +30,39 @@
     max-width: 1500px;
     height: 550px;
     margin: auto;
+    color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* CARD - Style----------------------------------------------------------------------- */
+.home-content{
+    width: 46%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    display: flex;
+}
+
+.whitespace-div{
+    width: 3%;
+    height: 100%;
+    background-color: #FFF3E0;
+}
+
+/* CARD - Style-------------------------------------------------------------------------- */
 .product-grid {
     width: 100%;
     max-width: 1500px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
     gap: 30px;
     padding: 50px 0px;
-    /* background-color: #FFC107; */
+    /* background-color: #262930; */
 }
 
 .product-cards {
@@ -58,7 +74,7 @@
     justify-content: space-evenly;
     text-align: center;
     color: white;
-    background-color: #4CAF50;
+    background-color: #262930;
     border: 1px solid #4CAF50;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
@@ -80,28 +96,28 @@
     font-weight: bold;
 }
 
-.abtn-add-to-cart {
+.btn-add-to-cart {
     padding: 10px 15px;
     color: white;
     border: 1px solid #FF5722;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #FF5722;
+    background-color: rgb(111, 107, 107);
     transition: background-color 0.2s ease-in-out;
 }
 
 .quantity-controls {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .btn-increase,
 .btn-decrease {
-    padding: 6px 15px;
+    padding: 3px 20px;
     font-size: 20px;
     font-weight: bold;
-    border: none;
-    background-color: #FF5722;
+    border: 1px solid #FF5722;
+    background-color: rgb(111, 107, 107);
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -119,25 +135,26 @@
     margin: auto;
     height: 1000px;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex-direction: column;
-    /* background-color: red; */
+    /* background-color: #50556f; */
 }
 
 .banner-section {
     width: 100%;
     display: flex;
+    align-items: center;
     /* background-color: rgb(19, 1, 1); */
 }
 
 .center-content {
-    height: 45%;
+    height: 35%;
     justify-content: flex-start;
     /* background-color:aquamarine; */
 }
 
 .right-content {
-    height: 55%;
+    height: 30%;
     justify-content: flex-end;
     /* background-color: blueviolet; */
 }

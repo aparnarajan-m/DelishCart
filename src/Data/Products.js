@@ -85,10 +85,10 @@ const products = [
   },
   {
     id: 13,
-    name: "Ice Cream Sundae",
-    price: 110,
-    image: "https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2020/10/chocolate-sundae.jpg",
-    description: "Vanilla ice cream with chocolate syrup and nuts."
+    name: "Noodles",
+    price: 170,
+    image: "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/63/2020/03/GettyImages-1051749178-scaled.jpg",
+    description: "chicken and vegitable mixed and spicy"
   },
   {
     id: 14,
@@ -111,34 +111,34 @@ const products = [
     image: "https://www.whiskaffair.com/wp-content/uploads/2014/08/Naan-3.jpg",
     description: "Soft Indian bread brushed with melted butter."
   },
-  {
-    id: 17,
-    name: "Fruit Salad",
-    price: 70,
-    image: "https://img.freepik.com/premium-photo/realistic-photo-fruit-salad-closeup-food-photography_947498-115.jpg",
-    description: "Seasonal fruits mixed and served chilled."
-  },
-  {
-    id: 18,
-    name: "Lassi",
-    price: 50,
-    image: "https://www.shoutlo.com/uploads/articles/header-img-lassi-shops-in-chandigarh.jpeg",
-    description: "Sweet yogurt-based chilled drink."
-  },
-    {
-    id: 19,
-    name: "Noodles",
-    price: 170,
-    image: "http://images.unsplash.com/photo-1585032226651-759b368d7246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8bm9vZGxlc3x8MHx8fHwxNjI4Nzg0MDA1&ixlib=rb-1.2.1&q=80&w=1080",
-    description: "chicken and vegitable mixed and spicy"
-  },
-  {
-    id: 20,
-    name: "Tandoori Roti",
-    price: 20,
-    image: "https://anandschicken.com/wp-content/uploads/2021/07/DIV02536-scaled.jpg",
-    description: "Whole wheat flatbread cooked in a clay oven."
-  }
+  // {
+  //   id: 17,
+  //   name: "Fruit Salad",
+  //   price: 70,
+  //   image: "https://img.freepik.com/premium-photo/realistic-photo-fruit-salad-closeup-food-photography_947498-115.jpg",
+  //   description: "Seasonal fruits mixed and served chilled."
+  // },
+  // {
+  //   id: 18,
+  //   name: "Lassi",
+  //   price: 50,
+  //   image: "https://www.shoutlo.com/uploads/articles/header-img-lassi-shops-in-chandigarh.jpeg",
+  //   description: "Sweet yogurt-based chilled drink."
+  // },
+  //   {
+  //   id: 19,
+  //   name: "Noodles",
+  //   price: 170,
+  //   image: "http://images.unsplash.com/photo-1585032226651-759b368d7246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8bm9vZGxlc3x8MHx8fHwxNjI4Nzg0MDA1&ixlib=rb-1.2.1&q=80&w=1080",
+  //   description: "chicken and vegitable mixed and spicy"
+  // },
+  // {
+  //   id: 20,
+  //   name: "Tandoori Roti",
+  //   price: 20,
+  //   image: "https://anandschicken.com/wp-content/uploads/2021/07/DIV02536-scaled.jpg",
+  //   description: "Whole wheat flatbread cooked in a clay oven."
+  // }
 ];
 
 export default products;
