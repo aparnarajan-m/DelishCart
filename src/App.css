@@ -8,3 +8,9 @@
   height: 100vh;
   overflow-x: hidden;
 }
+
+.app-container{
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}

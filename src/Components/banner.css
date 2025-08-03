@@ -1,0 +1,57 @@
+.special-banner {
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    color: #262930;
+    /* background-color: #262930; */
+}
+
+.banner-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(19, 1, 1); */
+}
+
+.center-content {
+    height: 35%;
+    justify-content: flex-start;
+    /* background-color:aquamarine; */
+}
+
+.right-content {
+    height: 30%;
+    justify-content: flex-end;
+    /* background-color: blueviolet; */
+}
+
+.banner-img1 {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner-img2 {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner-content{
+    width: 55%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.banner-heading{
+    font-size: 2rem;
+}

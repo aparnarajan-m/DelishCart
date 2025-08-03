@@ -1,13 +1,14 @@
-import Header from './Components/Header'
-import Home from './Components/Home'
+import { BrowserRouter as Router } from 'react-router-dom';
+import Layout from './Layout/Layout'
 import './App.css'
 
 function App() {
 
   return (
     <div className='app-wrapper'>
-    <Header/>
-    <Home/>
+      <Router>
+        <Layout/>
+      </Router>
     </div>
   )
 }
