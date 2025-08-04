@@ -22,10 +22,6 @@
     background-color: #262930;
 }
 
-.product-cards:hover {
-    transform: translateY(-2px);
-}
-
 .product-Img {
     width: 65%;
     height: 190px;
@@ -43,7 +39,26 @@
     color: white;
     border: 1px solid #FF5722;
     border-radius: 10px;
+}
+
+.btn-add-to-cart,
+.incement-btn,
+.decrement-btn{
     cursor: pointer;
     background-color: rgb(111, 107, 107);
-    transition: background-color 0.2s ease-in-out;
 }
+
+.incement-btn,
+.decrement-btn{
+    padding: 3px 15px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+.inc-dec-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
