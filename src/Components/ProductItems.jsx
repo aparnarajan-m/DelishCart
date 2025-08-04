@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, increaseQty, decreaseQty } from '../Redux/CartSlice';
+import { addToCart, increaseQty, decreaseQty, removeFromCart } from '../Redux/CartSlice';
 import './productitems.css';
 
 function ProductItems({ item, showCartActions = false }) {
@@ -14,6 +14,7 @@ function ProductItems({ item, showCartActions = false }) {
   const handleAddToCart = () => dispatch(addToCart(item));
   const handleIncrease = () => dispatch(increaseQty(item.id));
   const handleDecrease = () => dispatch(decreaseQty(item.id));
+  const handleRemove = () => dispatch(removeFromCart(item.id));
 
   return (
     <div className="product-cards">
@@ -21,7 +22,9 @@ function ProductItems({ item, showCartActions = false }) {
       <img className="product-Img" src={item.image} alt="product" />
       <h4 className="item-price">₹{item.price}</h4>
 
-      {showCartActions && cartItem ? (
+      {showCartActions ? (
+        cartItem ? (
+        <>
         <div className="inc-dec-btns">
           <button className="incement-btn" onClick={handleDecrease}>
             ➖
@@ -31,14 +34,23 @@ function ProductItems({ item, showCartActions = false }) {
             ➕
           </button>
         </div>
+        <button className='remove-btn' onClick={handleRemove}>Remove</button>
+        </>
 
       ) : (
+        <p>Removed from Cart</p>
+      )
+      ) : cartItem ? (
+          <button className="btn-added" disabled>
+          Added to Cart
+        </button>
+      ):(
 
         <button className="btn-add-to-cart" onClick={handleAddToCart}>
           Add To Cart
         </button>
       )}
-      
+
     </div>
   );
 }

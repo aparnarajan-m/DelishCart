@@ -34,7 +34,9 @@
     font-weight: bold;
 }
 
-.btn-add-to-cart {
+.btn-add-to-cart,
+.btn-added,
+.remove-btn {
     padding: 10px 15px;
     color: white;
     border: 1px solid #FF5722;
@@ -43,7 +45,9 @@
 
 .btn-add-to-cart,
 .incement-btn,
-.decrement-btn{
+.decrement-btn,
+.btn-added,
+.remove-btn {
     cursor: pointer;
     background-color: rgb(111, 107, 107);
 }
@@ -61,4 +65,3 @@
     align-items: center;
     gap: 10px;
 }
-
