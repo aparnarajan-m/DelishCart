@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, increaseQty, decreaseQty, removeFromCart } from '../Redux/CartSlice';
 import './productitems.css';
@@ -11,10 +12,24 @@ function ProductItems({ item, showCartActions = false }) {
 
   const quantity = cartItem?.quantity || 0;
 
-  const handleAddToCart = () => dispatch(addToCart(item));
-  const handleIncrease = () => dispatch(increaseQty(item.id));
-  const handleDecrease = () => dispatch(decreaseQty(item.id));
-  const handleRemove = () => dispatch(removeFromCart(item.id));
+  const handleAddToCart = () => {
+    dispatch(addToCart(item));
+    toast.success("Added to cart!");
+  } 
+
+  const handleIncrease = () => {
+    dispatch(increaseQty(item.id));
+    toast("Quantity Increased");
+  }
+
+  const handleDecrease = () => {
+    dispatch(decreaseQty(item.id));
+    toast("Quantity Decreased");
+  }
+  const handleRemove = () => {
+    dispatch(removeFromCart(item.id));
+    toast.info("Removed from cart!")
+  } 
 
   return (
     <div className="product-cards">
@@ -42,7 +57,7 @@ function ProductItems({ item, showCartActions = false }) {
       )
       ) : cartItem ? (
           <button className="btn-added" disabled>
-          Added to Cart
+          Added
         </button>
       ):(
 
