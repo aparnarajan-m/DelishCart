@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import ProductItems from '../Components/ProductItems';
+import ProductCard from '../Components/ProductCard';
 
 function Cart() {
   const cartItems = useSelector((state) => state.cart.cartList);
@@ -13,7 +13,7 @@ function Cart() {
       ) : (
         <div className="product-wrapper">
           {cartItems.map((item) => (
-             <ProductItems key={item.id} item={item} showCartActions={true} />
+             <ProductCard key={item.id} item={item} showCartActions={true} />
           ))}
         </div>
       )}

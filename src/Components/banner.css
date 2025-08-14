@@ -2,9 +2,11 @@
     width: 100%;
     max-width: 1450px;
     margin: auto;
-    height: 1000px;
+    height: 1055px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #262930;
     /* background-color: #262930; */
 }
@@ -17,13 +19,13 @@
 }
 
 .center-content {
-    height: 35%;
+    height: 31%;
     justify-content: flex-start;
     /* background-color:aquamarine; */
 }
 
 .right-content {
-    height: 30%;
+    height: 31%;
     justify-content: flex-end;
     /* background-color: blueviolet; */
 }

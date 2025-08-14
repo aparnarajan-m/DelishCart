@@ -1,6 +1,6 @@
 import React from 'react'
 import bgImage from '../assets/food1.jpg'
-import ProductCard from '../Components/ProductCard'
+import ProductItem from '../Components/ProductItem'
 import './home.css'
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
                 </section>
             </div>
 
-            <ProductCard />
+            <ProductItem />
 
         </div>
     )

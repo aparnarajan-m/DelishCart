@@ -39,3 +39,21 @@
    border-radius: 10px;
    background-color: rgb(219, 59, 59);
 }
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        padding: 10 0px;
+    }
+
+    .header-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .cart-count {
+        font-size: 0.6rem;
+        min-width: 14px;
+        min-height: 14px;
+    }
+}

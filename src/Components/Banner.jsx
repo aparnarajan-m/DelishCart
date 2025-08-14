@@ -1,7 +1,7 @@
 import React from 'react'
 import bgImge2 from '../assets/photo2.jpeg'
 import bgImge3 from '../assets/photo3.jpg'
-import bgImge4 from '../assets/photo5.jpg'
+import bgImge4 from '../assets/photo4.jpg'
 import './banner.css'
 
 function Banner() {
@@ -21,9 +21,9 @@ function Banner() {
                     <h1 className='banner-heading'>Delicious Deals Await</h1>
                     <p>Shop now and enjoy exclusive discounts on your favorite gourmet delights and essentials.</p>
                 </div>
-
                 <img className="banner-img2" src={bgImge2} alt="Special Banner" />
             </div>
+            
             <div className='banner-section center-content'>
                 <img className="banner-img1" src={bgImge4} alt="Special Banner" />
                 <div className='banner-content'>
